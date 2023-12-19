@@ -1,0 +1,98 @@
+\documentclass[a4paper, french, openany, 12pt]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{pifont}
+\usepackage{graphicx}
+\usepackage{fullpage}
+\usepackage[dvipsnames]{xcolor} % colors
+\usepackage{tabto}
+\usepackage{stackengine}
+\usepackage{lipsum}
+\usepackage[skip=20pt]{parskip} % space between paragraphs
+\usepackage[hidelinks]{hyperref} % links
+\usepackage[framemethod=TikZ]{mdframed} % frames with colored background
+\usepackage{titlesec} % exclude numbered sections from table of contents
+\usepackage{amssymb} % symbols
+\usepackage{multicol} % multiple columns
+
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+
+\newcommand{\fullwidthimage}[1]{
+  \begin{center}
+    \makebox[\textwidth]{\includegraphics[width=\paperwidth]{#1}}
+  \end{center}
+}
+
+\newcommand\marginfigure[2][]{
+  \leavevmode
+  \tabto*{-20pt}
+  \smash{\belowbaseline[-\ht\strutbox]{\makebox[0pt][r]
+  {\includegraphics[#1]{#2}}}}
+  \tabto*{\TabPrevPos}
+}
+
+\newcommand{\todo}[1]{
+  \begin{color}{RubineRed}
+    \texttt{TODO {#1}}
+  \end{color}
+}
+
+\newenvironment{separator}{
+  \begin{center}
+    \ding{167} 
+    \ding{167} 
+    \ding{167}
+    \ding{167}
+    \ding{167}
+  \end{center}
+}
+
+\title{
+  \vspace*{-8cm}
+
+  \fullwidthimage{images/cover.jpg}
+
+  \vspace*{5cm}
+
+  \bsc{Developer skills framework}
+
+  \todo{Your daily RPG}
+}
+
+\author{Sébastien Carceles}
+
+\date{}
+
+\begin{document}
+
+\begin{titlepage}
+  \maketitle
+\end{titlepage}
+
+\frontmatter
+
+\chapter{Avant-propos}
+
+\section*{wut?}
+
+\todo{say something smart here}
+
+
+\section*{Propriété intellectuelle}
+
+\todo{open licence?}
+
+\todo{images rights}
+
+\mainmatter
+
+\chapter{Le village de Guernévez}
+
+
+\backmatter
+
+\tableofcontents
+
+\end{document}
