@@ -8,7 +8,6 @@
 \usepackage[dvipsnames]{xcolor} % colors
 \usepackage{tabto}
 \usepackage{stackengine}
-\usepackage{lipsum}
 \usepackage[skip=20pt]{parskip} % space between paragraphs
 \usepackage[hidelinks]{hyperref} % links
 \usepackage[framemethod=TikZ]{mdframed} % frames with colored background
@@ -18,6 +17,7 @@
 
 \def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
 \let\endchangemargin=\endlist 
+\setcounter{secnumdepth}{-1} % exclude numbered sections from chapter titles
 
 \newcommand{\fullwidthimage}[1]{
   \begin{center}
@@ -49,6 +49,13 @@
   \end{center}
 }
 
+\newcommand\dex{\textcolor{BrickRed}{\textbf{\bsc{Dex}}}}
+\newcommand\str{\textcolor{DarkOrchid}{\textbf{\bsc{Str}}}}
+\newcommand\wis{\textcolor{MidnightBlue}{\textbf{\bsc{Wis}}}}
+\newcommand\cha{\textcolor{RawSienna}{\textbf{\bsc{Cha}}}}
+
+\newcommand\xp[1]{\textcolor{Gray}{Expérience: {#1} ans}}
+
 \title{
   \vspace*{-8cm}
 
@@ -56,9 +63,9 @@
 
   \vspace*{5cm}
 
-  \bsc{Developer skills framework}
+  \bsc{Référenciel de compétences pour développeurs et développeuses}
 
-  \todo{Your daily RPG}
+  Le framework pour vous positionner et évoluer dans votre carrière.
 }
 
 \author{Sébastien Carceles}
@@ -75,10 +82,57 @@
 
 \chapter{Avant-propos}
 
-\section*{wut?}
+\section*{Objectif de ce référentiel}
 
-\todo{say something smart here}
+Le métier de développeur est en mutation perpétuelle.
+Les technologies évoluent, les méthodes de travail changent, les attentes des clients aussi.
+Il est difficile de s'y retrouver et de savoir où l'on se situe dans ce paysage mouvant.
 
+Les entreprises ont besoin de référentiels pour évaluer les compétences de leurs employés.
+Les développeurs ont besoin de référentiels pour se positionner et évoluer dans leur carrière.
+Ce référentiel a pour but de répondre à ces deux besoins.
+
+\section*{Nomenclature des postes}
+
+Par ailleurs, les entreprises nomment les postes de leurs employés de différentes manières.
+Cette nommenclature n'est pas normée : un poste de développeur peut être appelé "développeur", "ingénieur", 
+"consultant", "expert", "architecte", "lead", "manager", etc.
+Il peut correspondre à un poste junior, mid-level, senior, lead, manager, etc, et couvrir différents domaines de 
+responsabilités, qui diffèrent d'une entreprise à l'autre.
+
+Ce référence propose une nomenclature des postes de développeurs, qu'on appellera "positions",
+ainsi qu'une description des compétences attendues.
+
+Dans l'industrie du développement logiciel, les noms de postes ou de positions sont, la plupart du temps, en anglais.
+C'est pourquoi ce référentiel utilise des noms en anglais.
+
+\section*{Caractéristiques}
+
+À chaque position correspond un ensemble de compétences, exprimées selon des caractéristiques.
+
+\subsubsection*{Dexterity: technical skill} 
+
+La \dex\ est une mesure de la profondeur de la connaissance d'une technologie.
+
+\subsubsection*{Strength: get stuff done} 
+
+La \str\ est une mesure de la capacité à résoudre des problèmes.
+
+\subsubsection*{Wisdom: impact} 
+
+La \wis\ est une mesure de la capacité à prendre des décisions et à avoir de l'impact.
+
+\subsubsection*{Charisma: leadership} 
+
+Le \cha\ est une mesure de la capacité à influencer et inspirer les autres.
+
+\section*{Source}
+
+Ce référentiel est issue du post de blog 
+"Sharing Our Engineering Ladder"\footnote{\url{https://dresscode.renttherunway.com/blog/ladder}}
+de la société Rent the Runway.
+
+Il a ensuite été traduit et retravaillé et adapté pour le marché français.
 
 \section*{Propriété intellectuelle}
 
@@ -88,8 +142,73 @@
 
 \mainmatter
 
-\chapter{Le village de Guernévez}
+\part{Les différents chemins}
 
+\part{Contributor Track}
+
+\chapter{Junior developer}
+
+\xp{0 à 2}
+
+\subsubsection*{\dex} 
+
+Possède une connaissance approfondie des concepts fondamentaux de l'informatique.
+
+Se concentre sur la croissance en tant qu'ingénieur, en apprenant les outils, les ressources et les processus existants.
+
+\subsubsection*{\str}
+
+Développe ses compétences en productivité en apprenant le contrôle de source, les éditeurs, le système de construction 
+et autres outils, ainsi que les meilleures pratiques de test.
+
+Est capable de prendre des sous-tâches bien définies et de les accomplir.
+
+\subsubsection*{\wis}
+
+Développe ses de connaissances sur un seul composant de l'architecture du projet.
+
+\subsubsection*{\cha}
+
+Est efficace dans la communication de l'état d'avancement à l'équipe.
+
+Manifeste les valeurs fondamentales de l'entreprise, se concentre sur la compréhension et la mise en pratique de ces 
+valeurs.
+
+Accepte gracieusement les retours d'information et apprend de tout ce qu'il fait.
+
+\chapter{Mid-level developer}
+
+\xp{2 à 5}
+
+\chapter{Senior developer}
+
+\xp{5 à 8}
+
+\chapter{Lead developer}
+
+\xp{6 à 10}
+
+\part{Specialist Track}
+
+\chapter{Principal developer}
+
+\xp{10 à 15}
+
+\chapter{Senior principal developer}
+
+\xp{15 à 20}
+
+\chapter{Architect}
+
+\part{Manager Track}
+
+\chapter{Engineering manager}
+
+\chapter{Engineering director}
+
+\chapter{VP of engineering}
+
+\chapter{Exec}
 
 \backmatter
 
