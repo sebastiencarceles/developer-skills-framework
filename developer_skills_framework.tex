@@ -25,28 +25,10 @@
   \end{center}
 }
 
-\newcommand\marginfigure[2][]{
-  \leavevmode
-  \tabto*{-20pt}
-  \smash{\belowbaseline[-\ht\strutbox]{\makebox[0pt][r]
-  {\includegraphics[#1]{#2}}}}
-  \tabto*{\TabPrevPos}
-}
-
 \newcommand{\todo}[1]{
   \begin{color}{RubineRed}
     \texttt{TODO {#1}}
   \end{color}
-}
-
-\newenvironment{separator}{
-  \begin{center}
-    \ding{167} 
-    \ding{167} 
-    \ding{167}
-    \ding{167}
-    \ding{167}
-  \end{center}
 }
 
 \newcommand\dex{\textcolor{BrickRed}{\textbf{\bsc{Dexterity} - Technical skill}}}
