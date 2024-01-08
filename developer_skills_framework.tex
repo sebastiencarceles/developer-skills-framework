@@ -31,10 +31,15 @@
   \end{color}
 }
 
-\newcommand\dex{\textcolor{BrickRed}{\textbf{\bsc{Dexterity} - Technical skill}}}
-\newcommand\str{\textcolor{DarkOrchid}{\textbf{\bsc{Strength} - Get stuff done}}}
-\newcommand\wis{\textcolor{MidnightBlue}{\textbf{\bsc{Wisdom} - Impact}}}
-\newcommand\cha{\textcolor{RawSienna}{\textbf{\bsc{Charisma} - Communication \& leadership}}}
+\newcommand\dex{\textcolor{BrickRed}{\textbf{Technical skill [\bsc{DEX}]}}}
+\newcommand\str{\textcolor{DarkOrchid}{\textbf{Get stuff done [\bsc{STR}]}}}
+\newcommand\wis{\textcolor{MidnightBlue}{\textbf{Impact [\bsc{WIS}]}}}
+\newcommand\cha{\textcolor{RawSienna}{\textbf{Communication \& leadership [\bsc{CHA}]}}}
+
+\newcommand\dexterity{\textcolor{BrickRed}{\bsc{Dexterity}}}
+\newcommand\strength{\textcolor{DarkOrchid}{\bsc{Strength}}}
+\newcommand\wisdom{\textcolor{MidnightBlue}{\bsc{Wisdom}}}
+\newcommand\charisma{\textcolor{RawSienna}{\bsc{Charisma}}}
 
 \newcommand\xp[1]{\textcolor{Gray}{Expérience: {#1} ans}}
 
@@ -64,104 +69,112 @@
 
 \chapter{Avant-propos}
 
-\section*{Objectif de ce référentiel}
-
-Les métiers du développement sont en mutation perpétuelle.
-Les technologies évoluent, les méthodes de travail changent, les attentes des clients aussi.
-Il est difficile de s'y retrouver et de savoir où l'on se situe dans ce paysage mouvant.
-
-Les entreprises ont besoin de référentiels pour évaluer les compétences de leurs employés.
-Les développeur·euses ont besoin de référentiels pour se positionner et évoluer dans leur carrière.
-Ce référentiel a pour but de répondre à ces deux besoins.
-
-\section*{Positions}
-
-Les entreprises nomment les postes de leurs employé·es de différentes manières.
-Cette nommenclature n'est pas normée : un poste peut être appelé "développeur / développeuse", "ingénieur·e de 
-développement", "consultant / consultante", "expert / experte", "architecte", "lead", "manager", etc.
-Il peut correspondre à un poste junior, mid-level, senior, lead, manager, etc, et couvrir différents domaines de 
-responsabilités, qui diffèrent d'une entreprise à l'autre.
-
-Ce référentiel propose une nomenclature des postes, qu'on appellera "positions",
-ainsi qu'une description des compétences attendues pour chaque position.
-
-Dans l'industrie du développement logiciel, les noms de postes ou de positions sont, la plupart du temps, en anglais.
-C'est pourquoi ce référentiel utilise des noms en anglais.
-
-\section*{Caractéristiques et compétences}
-
-À chaque position correspond un ensemble de compétences, organisées par caractéristique principale.
-Les caractaristiques sont au nombre de 4 :
-
-\subsubsection*{\dex} 
-
-C'est une mesure de la profondeur de la connaissance d'une technologie.
-
-\subsubsection*{\str} 
-
-C'est une mesure de la capacité à résoudre des problèmes.
-
-\subsubsection*{\wis} 
-
-C'est une mesure de la capacité à prendre des décisions et à avoir de l'impact.
-
-\subsubsection*{\cha} 
-
-C'est une mesure de la capacité à influencer et inspirer les autres.
-
-\section*{Positionnement}
-
-Pour être légitime dans une position donnée, il faut en maîtriser toutes les compétences.
-Il faut également posséder les compétences des positions précédentes dans le chemin parcouru.
-
-\section*{Évolution de position}
-
-Pour évoluer d'une position à l'autre, il faut naturellement acquérir, consolider et maîtriser toutes les compétences
-qui la composent.
-
-\section*{Source}
-
-Ce référentiel est issue du post de blog 
-"Sharing Our Engineering Ladder"\footnote{\url{https://dresscode.renttherunway.com/blog/ladder}}
-de la société Rent the Runway.
-
-Il a ensuite été traduit, retravaillé et adapté pour le marché français.
-
-\section*{Images}
-
-Photo de couverture par Annie Spratt\footnote{\url{https://unsplash.com/fr/@anniespratt}} sur Unsplash.
-
-\section*{Propriété intellectuelle}
-
-\todo{open licence?}
-
+\begin{multicols}{2}
+  
+  \section*{Objectif de ce référentiel}
+  
+  Les métiers du développement sont en mutation perpétuelle.
+  Les technologies évoluent, les méthodes de travail changent, les attentes des clients aussi.
+  Il est difficile de s'y retrouver et de savoir où l'on se situe dans ce paysage mouvant.
+  
+  Les entreprises ont besoin de référentiels pour évaluer les compétences de leurs employés.
+  Les développeur·euses ont besoin de référentiels pour se positionner et évoluer dans leur carrière.
+  Ce référentiel a pour but de répondre à ces deux besoins.
+  
+  \section*{Positions}
+  
+  Les entreprises nomment les postes de leurs employé·es de différentes manières.
+  Cette nommenclature n'est pas normée : un poste peut être appelé "développeur / développeuse", "ingénieur·e de 
+  développement", "consultant / consultante", "expert / experte", "architecte", "lead", "manager", etc.
+  Il peut correspondre à un poste junior, mid-level, senior, lead, manager, etc, et couvrir différents domaines de 
+  responsabilités, qui diffèrent d'une entreprise à l'autre.
+  
+  Ce référentiel propose une nomenclature des postes, qu'on appellera "positions",
+  ainsi qu'une description des compétences attendues pour chaque position.
+  
+  Dans l'industrie du développement logiciel, les noms de postes ou de positions sont, la plupart du temps, en anglais.
+  C'est pourquoi ce référentiel utilise des noms en anglais.
+  
+  \section*{Caractéristiques et compétences}
+  
+  À chaque position correspond un ensemble de compétences, organisées par caractéristique principale.
+  Les caractaristiques sont au nombre de 4 :
+  
+  \subsubsection*{\dex} 
+  
+  La \dexterity\ est une mesure de la profondeur de la connaissance d'une technologie.
+  
+  \subsubsection*{\str} 
+  
+  La \strength\ est une mesure de la capacité à résoudre des problèmes.
+  
+  \subsubsection*{\wis} 
+  
+  La \wisdom\ est une mesure de la capacité à prendre des décisions et à avoir de l'impact.
+  
+  \subsubsection*{\cha} 
+  
+  Le \charisma\ est une mesure de la capacité à influencer et inspirer les autres.
+  
+  \section*{Positionnement}
+  
+  Pour être légitime dans une position donnée, il faut en maîtriser toutes les compétences.
+  Il faut également posséder les compétences des positions précédentes dans le chemin parcouru.
+  
+  \section*{Évolution de position}
+  
+  Pour évoluer d'une position à l'autre, il faut naturellement acquérir, consolider et maîtriser toutes les compétences
+  qui la composent.
+  
+  \section*{Source}
+  
+  Ce référentiel est issue du post de blog 
+  "Sharing Our Engineering Ladder"\footnote{\url{https://dresscode.renttherunway.com/blog/ladder}}
+  de la société Rent the Runway.
+  
+  Il a ensuite été traduit, retravaillé et adapté pour le marché français.
+  
+  \section*{Images}
+  
+  Photo de couverture par Annie Spratt\footnote{\url{https://unsplash.com/fr/@anniespratt}} sur Unsplash.
+  
+  \section*{Propriété intellectuelle}
+  
+  \todo{open licence?}
+  
+\end{multicols}
+  
 \mainmatter
 
 \part{Les différents parcours}
 
 \fullwidthimage{images/tracks.png}
 
-La carrière du développeur ou de la développeuse peut emprunter plusieurs chemins.
-Ils ne sont pas rigoureusement étanches et des passages d'un chemin à l'autre sont possibles.
+\begin{multicols}{2}
 
-\subsubsection*{Contributor Track}
+  La carrière du développeur ou de la développeuse peut emprunter plusieurs chemins.
+  Ils ne sont pas rigoureusement étanches et des passages d'un chemin à l'autre sont possibles.
 
-Dans tous les cas, une carrière commence avec la première position du premier parcours, nommé "Contributor Track".
-Dans ce parcours, au travers des positions qui le composent, la personne acquiert des compétences clés pour être une
-excellente contributrice au projet.
+  \subsubsection*{Contributor Track}
 
-\subsubsection*{Specialist Track}
+  Dans tous les cas, une carrière commence avec la première position du premier parcours, nommé "Contributor Track".
+  Dans ce parcours, au travers des positions qui le composent, la personne acquiert des compétences clés pour être une
+  excellente contributrice au projet.
 
-Après avoir atteint la position "Lead Developer" du "Contributor Track", la personne peut choisir de se spécialiser dans
-la technique, en choisissant le "Specialist Track".
-Si elle reste principalement contributrice, c'est un parcours qui l'amène sur le chemin de l'expertise technique.
+  \subsubsection*{Specialist Track}
 
-\subsubsection*{Manager Track}
+  Après avoir atteint la position "Lead Developer" du "Contributor Track", la personne peut choisir de se spécialiser dans
+  la technique, en choisissant le "Specialist Track".
+  Si elle reste principalement contributrice, c'est un parcours qui l'amène sur le chemin de l'expertise technique.
 
-Après avoir atteint la position "Lead Developer" du "Contributor Track", la personne peut choisir de se spécialiser dans
-le management, en choisissant le "Manager Track".
-C'est un parcours qui l'amène sur le chemin du management de l'équipe et des individus qui la composent, pour les
-accompagner dans leur carrière et dans la réponse aux besoins de l'entreprise.
+  \subsubsection*{Manager Track}
+
+  Après avoir atteint la position "Lead Developer" du "Contributor Track", la personne peut choisir de se spécialiser dans
+  le management, en choisissant le "Manager Track".
+  C'est un parcours qui l'amène sur le chemin du management de l'équipe et des individus qui la composent, pour les
+  accompagner dans leur carrière et dans la réponse aux besoins de l'entreprise.
+
+\end{multicols}
 
 \part{Contributor Track}
 
@@ -169,201 +182,217 @@ accompagner dans leur carrière et dans la réponse aux besoins de l'entreprise.
 
 \xp{0 à 2}
 
-\subsubsection*{\dex} 
+\begin{multicols}{2}
 
-Possède une connaissance approfondie des concepts fondamentaux de l'informatique.
+  \subsubsection*{\dex} 
 
-Se concentre sur la croissance en tant qu'ingénieur·e, en apprenant les outils, les ressources et les processus 
-existants.
+  Possède une connaissance approfondie des concepts fondamentaux de l'informatique.
 
-\subsubsection*{\str}
+  Se concentre sur la croissance en tant qu'ingénieur·e, en apprenant les outils, les ressources et les processus 
+  existants.
 
-Développe ses compétences en productivité en apprenant le contrôle de source, les éditeurs, le système de construction 
-et autres outils, ainsi que les meilleures pratiques de test.
+  \subsubsection*{\str}
 
-Est capable de prendre des sous-tâches bien définies et de les accomplir.
+  Développe ses compétences en productivité en apprenant le contrôle de source, les éditeurs, le système de construction 
+  et autres outils, ainsi que les meilleures pratiques de test.
 
-\subsubsection*{\wis}
+  Est capable de prendre des sous-tâches bien définies et de les accomplir.
 
-Développe ses connaissances sur un seul composant de l'architecture du projet.
+  \subsubsection*{\wis}
 
-\subsubsection*{\cha}
+  Développe ses connaissances sur un seul composant de l'architecture du projet.
 
-Est efficace dans la communication de l'état d'avancement à l'équipe.
+  \subsubsection*{\cha}
 
-Manifeste les valeurs fondamentales de l'entreprise, se concentre sur la compréhension et la mise en pratique de ces 
-valeurs.
+  Est efficace dans la communication de l'état d'avancement à l'équipe.
 
-Accepte gracieusement les retours d'information et apprend de tout ce qu'iel fait.
+  Manifeste les valeurs fondamentales de l'entreprise, se concentre sur la compréhension et la mise en pratique de ces 
+  valeurs.
+
+  Accepte gracieusement les retours d'information et apprend de tout ce qu'iel fait.
+\end{multicols}
 
 \chapter{Developer}
 
 \xp{2 à 5}
 
-\subsubsection*{\dex}
+\begin{multicols}{2}
 
-Écrit du code correct et propre avec des conseils ; suit systématiquement les meilleures pratiques définies sur le
-projet.
+  \subsubsection*{\dex}
 
-Participe à la conception technique des fonctionnalités avec des conseils.
+  Écrit du code correct et propre avec des conseils ; suit systématiquement les meilleures pratiques définies sur le
+  projet.
 
-\subsubsection*{\dex}
+  Participe à la conception technique des fonctionnalités avec des conseils.
 
-Fait rarement la même erreur deux fois, commence à se concentrer sur l'acquisition d'une expertise dans un ou plusieurs 
-domaines (par exemple : développement dans un langage donné, meilleures pratiques de performance, utilisation efficace 
-des bases de données, messagerie, etc.)
+  \subsubsection*{\dex}
 
-Apprend rapidement et progresse régulièrement sans avoir besoin de commentaires significatifs constants de la part 
-d'ingénieur·es plus expérimenté·es.
+  Fait rarement la même erreur deux fois, commence à se concentrer sur l'acquisition d'une expertise dans un ou plusieurs 
+  domaines (par exemple : développement dans un langage donné, meilleures pratiques de performance, utilisation efficace 
+  des bases de données, messagerie, etc.)
 
-\subsubsection*{\str}
+  Apprend rapidement et progresse régulièrement sans avoir besoin de commentaires significatifs constants de la part 
+  d'ingénieur·es plus expérimenté·es.
 
-Fait des progrès réguliers sur les tâches ; sait quand demander de l'aide pour se débloquer.
+  \subsubsection*{\str}
 
-\subsubsection*{\str}
+  Fait des progrès réguliers sur les tâches ; sait quand demander de l'aide pour se débloquer.
 
-Est capable de prendre en charge des fonctionnalités de petite à moyenne envergure, de la conception technique à 
-l'achèvement.
+  \subsubsection*{\str}
 
-Est capable de hiérarchiser les tâches ; évite de s'enliser dans des détails sans importance et des "discussions sans 
-fin".
+  Est capable de prendre en charge des fonctionnalités de petite à moyenne envergure, de la conception technique à 
+  l'achèvement.
 
-\subsubsection*{\wis}
+  Est capable de hiérarchiser les tâches ; évite de s'enliser dans des détails sans importance et des "discussions sans 
+  fin".
 
-Autonome dans au moins un grand domaine du code avec une compréhension globale des autres composants.
+  \subsubsection*{\wis}
 
-\subsubsection*{\wis}
+  Autonome dans au moins un grand domaine du code avec une compréhension globale des autres composants.
 
-Est capable d'assurer une assistance en cas d'urgence pour leur domaine, y compris les systèmes avec lesquels iel 
-n'est pas familier·ère.
+  \subsubsection*{\wis}
 
-\subsubsection*{\cha}
+  Est capable d'assurer une assistance en cas d'urgence pour leur domaine, y compris les systèmes avec lesquels iel 
+  n'est pas familier·ère.
 
-Donne des commentaires opportuns et utiles aux pairs et aux responsables.
+  \subsubsection*{\cha}
 
-Communique les hypothèses et obtient des éclaircissements sur les tâches dès le départ afin de minimiser le besoin de 
-retravailler.
+  Donne des commentaires opportuns et utiles aux pairs et aux responsables.
 
-\subsubsection*{\cha}
+  Communique les hypothèses et obtient des éclaircissements sur les tâches dès le départ afin de minimiser le besoin de 
+  retravailler.
 
-Sollicite les commentaires des autres et est désireux de trouver des moyens de s'améliorer.
+  \subsubsection*{\cha}
 
-Comprend comment son travail s'inscrit dans le projet global et identifie les problèmes liés aux exigences.
+  Sollicite les commentaires des autres et est désireux de trouver des moyens de s'améliorer.
+
+  Comprend comment son travail s'inscrit dans le projet global et identifie les problèmes liés aux exigences.
+
+\end{multicols}
 
 \chapter{Senior developer}
 
 \xp{5 à 8}
 
-\subsubsection*{\dex}
+\begin{multicols}{2}
 
-Comprend et prend des décisions de conception bien raisonnées et des compromis dans leur domaine.
+  \subsubsection*{\dex}
 
-Est capable de travailler dans d'autres domaines du code avec des conseils.
+  Comprend et prend des décisions de conception bien raisonnées et des compromis dans leur domaine.
 
-Ne s'agite pas lors du débogage.
+  Est capable de travailler dans d'autres domaines du code avec des conseils.
 
-\subsubsection*{\dex}
+  Ne s'agite pas lors du débogage.
 
-Démontre une connaissance des tendances de l'industrie, de l'infrastructure du projet et de son système de construction.
+  \subsubsection*{\dex}
 
-\subsubsection*{\str}
+  Démontre une connaissance des tendances de l'industrie, de l'infrastructure du projet et de son système de construction.
 
-Persistant face aux obstacles ; les résout efficacement, en faisant appel à d'autres personnes si nécessaire. 
+  \subsubsection*{\str}
 
-Nécessite un minimum de direction / supervision.
+  Persistant face aux obstacles ; les résout efficacement, en faisant appel à d'autres personnes si nécessaire. 
 
-\subsubsection*{\str}
+  Nécessite un minimum de direction / supervision.
 
-Prend l'initiative de résoudre les problèmes avant qu'ils ne lui soient assignés. 
-Recherche des preuves empiriques par le biais de preuves de concept, de tests et de recherches externes.
+  \subsubsection*{\str}
 
-Livre des produits complexes à l'équipe de QA / Produit, qu'iel estime bien préparés et exempts de bugs.
+  Prend l'initiative de résoudre les problèmes avant qu'ils ne lui soient assignés. 
+  Recherche des preuves empiriques par le biais de preuves de concept, de tests et de recherches externes.
 
-\subsubsection*{\wis}
+  Livre des produits complexes à l'équipe de QA / Produit, qu'iel estime bien préparés et exempts de bugs.
 
-Responsable de bout en bout sur des projets de complexité croissante ; contribue au code commun.
+  \subsubsection*{\wis}
 
-Examine les cas de test et conseille l'équipe de QA / Produit sur l'impact du code adjacent / régression.
+  Responsable de bout en bout sur des projets de complexité croissante ; contribue au code commun.
 
-Comprend l'activité commerciale afférente à son domaine d'activité.
+  Examine les cas de test et conseille l'équipe de QA / Produit sur l'impact du code adjacent / régression.
 
-\subsubsection*{\wis}
+  Comprend l'activité commerciale afférente à son domaine d'activité.
 
-Collabore avec le produit et l'analyse et définit des exigences qui tiennent compte des besoins de toutes les parties.
+  \subsubsection*{\wis}
 
-Possède de l'empathie envers l'utilisateur du logiciel qu'iel produit et utilise cette empathie pour orienter la prise 
-de décision.
+  Collabore avec le produit et l'analyse et définit des exigences qui tiennent compte des besoins de toutes les parties.
 
-Identifie les problèmes / risques de son propre travail et de celui des autres.
+  Possède de l'empathie envers l'utilisateur du logiciel qu'iel produit et utilise cette empathie pour orienter la prise 
+  de décision.
 
-\subsubsection*{\cha}
+  Identifie les problèmes / risques de son propre travail et de celui des autres.
 
-Communique les décisions techniques par le biais de documents de conception ou de présentations techniques.
+  \subsubsection*{\cha}
 
-Mentore les ingénieur·es juniors par le biais de la collaboration, de l'examen de conception et de l'examen de code. 
-Contribue fréquemment aux réunions informelles et aux démonstrations.
+  Communique les décisions techniques par le biais de documents de conception ou de présentations techniques.
 
-\subsubsection*{\cha}
+  Mentore les ingénieur·es juniors par le biais de la collaboration, de l'examen de conception et de l'examen de code. 
+  Contribue fréquemment aux réunions informelles et aux démonstrations.
 
-Communique efficacement entre les fonctions.
-Est capable de bien travailler avec le produit, le design, l'analyse, etc., si nécessaire.
+  \subsubsection*{\cha}
 
-Identifie de manière proactive les problèmes liés aux exigences (manque de clarté, incohérences, limitations techniques)
-pour son propre travail et le travail adjacent, et communique ces problèmes tôt pour aider à corriger le tir.
+  Communique efficacement entre les fonctions.
+  Est capable de bien travailler avec le produit, le design, l'analyse, etc., si nécessaire.
+
+  Identifie de manière proactive les problèmes liés aux exigences (manque de clarté, incohérences, limitations techniques)
+  pour son propre travail et le travail adjacent, et communique ces problèmes tôt pour aider à corriger le tir.
+
+\end{multicols}
+
 
 \chapter{Lead developer}
 
 \xp{6 à 10}
 
-\subsubsection*{\dex}
-Expert de référence dans un domaine spécifique du code.
+\begin{multicols}{2}
 
-Comprend l'architecture globale de l'ensemble du système.
+  \subsubsection*{\dex}
+  Expert de référence dans un domaine spécifique du code.
 
-\subsubsection*{\dex}
-Fournit des conseils techniques et donne son avis sur les décisions techniques qui ont un impact sur d'autres équipes ou
-sur l'entreprise dans son ensemble. 
+  Comprend l'architecture globale de l'ensemble du système.
 
-Effectue des recherches et propose de nouvelles technologies.
+  \subsubsection*{\dex}
+  Fournit des conseils techniques et donne son avis sur les décisions techniques qui ont un impact sur d'autres équipes ou
+  sur l'entreprise dans son ensemble. 
 
-\subsubsection*{\str}
+  Effectue des recherches et propose de nouvelles technologies.
 
-Définit et organise le travail en étapes bien définies pour éviter un livrable monolithique.
+  \subsubsection*{\str}
 
-Livre régulière dans les délais et travail constant pour faire des estimations précises et les respecter.
+  Définit et organise le travail en étapes bien définies pour éviter un livrable monolithique.
 
-\subsubsection*{\str}
+  Livre régulière dans les délais et travail constant pour faire des estimations précises et les respecter.
 
-Est réputé pour des lancements sans problème.
+  \subsubsection*{\str}
 
-Est responsable du plan de tests techniques et de performance pour ses projets.
+  Est réputé pour des lancements sans problème.
 
-\subsubsection*{\wis}
+  Est responsable du plan de tests techniques et de performance pour ses projets.
 
-Prend l'initiative d'identifier et de résoudre des problèmes importants, en se coordonnant avec d'autres personnes sur
-des problèmes techniques transversaux.
+  \subsubsection*{\wis}
 
-\subsubsection*{\wis}
+  Prend l'initiative d'identifier et de résoudre des problèmes importants, en se coordonnant avec d'autres personnes sur
+  des problèmes techniques transversaux.
 
-Définit l'orientation au niveau du projet / service et influence de manière constante la prise de décision au niveau
-technique.
+  \subsubsection*{\wis}
 
-Identifie et aborde de manière proactive la dette technique avant qu'elle ne devienne trop coûtuse à rembourser.
+  Définit l'orientation au niveau du projet / service et influence de manière constante la prise de décision au niveau
+  technique.
 
-\subsubsection*{\cha}
+  Identifie et aborde de manière proactive la dette technique avant qu'elle ne devienne trop coûtuse à rembourser.
 
-Aide les autres personnes à s'améliorer grâce à des revues de code, une documentation approfondie, des conseils 
-techniques et un mentorat ou en tant que chef technique sur un projet.
+  \subsubsection*{\cha}
 
-\subsubsection*{\cha}
-Siège aux comités de prise de décisions techniques ou architecturales, donne des commentaires sur des projets en dehors 
-de son domaine principal.
+  Aide les autres personnes à s'améliorer grâce à des revues de code, une documentation approfondie, des conseils 
+  techniques et un mentorat ou en tant que chef technique sur un projet.
 
-Comprend les compromis entre les besoins techniques, analytiques et produits et propose des solutions qui tiennent 
-compte de tous ces besoins.
+  \subsubsection*{\cha}
+  Siège aux comités de prise de décisions techniques ou architecturales, donne des commentaires sur des projets en dehors 
+  de son domaine principal.
 
-Identifie et propose des stratégies pour résoudre les problèmes techniques affectant son équipe, communique des normes 
-et obtient l'adhésion aux solutions.
+  Comprend les compromis entre les besoins techniques, analytiques et produits et propose des solutions qui tiennent 
+  compte de tous ces besoins.
+
+  Identifie et propose des stratégies pour résoudre les problèmes techniques affectant son équipe, communique des normes 
+  et obtient l'adhésion aux solutions.
+
+\end{multicols}
 
 \part{Specialist Track}
 
@@ -371,307 +400,336 @@ et obtient l'adhésion aux solutions.
 
 \xp{10 à 15}
 
-\subsubsection*{\dex}
-Est sollicité pour des conseils techniques.
+\begin{multicols}{2}
 
-Anticipe les problèmes techniques au niveau du produit et prend des décisions architecturales et de conception pour les 
-éviter.
+  \subsubsection*{\dex}
+  Est sollicité pour des conseils techniques.
 
-\subsubsection*{\dex}
-Est propriétaire et expert de grandes parties de la base de code.
+  Anticipe les problèmes techniques au niveau du produit et prend des décisions architecturales et de conception pour les 
+  éviter.
 
-A accumulé un historique d'améliorations majeures en termes de stabilité, de performance et de scalabilité sur des 
-systèmes critiques pour l'entreprise.
+  \subsubsection*{\dex}
+  Est propriétaire et expert de grandes parties de la base de code.
 
-\subsubsection*{\str}
+  A accumulé un historique d'améliorations majeures en termes de stabilité, de performance et de scalabilité sur des 
+  systèmes critiques pour l'entreprise.
 
-Est reconnu comme un contributeur prolifique aux projets principaux et aux projets annexes.
+  \subsubsection*{\str}
 
-\subsubsection*{\str}
+  Est reconnu comme un contributeur prolifique aux projets principaux et aux projets annexes.
 
-Est capable de réduire systématiquement la complexité des projets, des services et des processus afin de faire plus 
-avec moins de travail.
+  \subsubsection*{\str}
 
-\subsubsection*{\wis}
+  Est capable de réduire systématiquement la complexité des projets, des services et des processus afin de faire plus 
+  avec moins de travail.
 
-Définit l'architecture globale.
+  \subsubsection*{\wis}
 
-Déploie plusieurs services importants, des bibliothèques complexes ou des éléments d'infrastructure majeurs.
+  Définit l'architecture globale.
 
-\subsubsection*{\wis}
+  Déploie plusieurs services importants, des bibliothèques complexes ou des éléments d'infrastructure majeurs.
 
-A eu un impact positif évident sur la trajectoire technique de l'ensemble de l'entreprise.
+  \subsubsection*{\wis}
 
-\subsubsection*{\cha}
+  A eu un impact positif évident sur la trajectoire technique de l'ensemble de l'entreprise.
 
-Multiplie l'efficacité des autres en facilitant le travail inter-équipes.
+  \subsubsection*{\cha}
 
-\subsubsection*{\cha}
+  Multiplie l'efficacité des autres en facilitant le travail inter-équipes.
 
-Écoute et guide les débats pour aider à parvenir à un consensus.
-Une fois une décision prise, communique clairement et soutient cette décision.
+  \subsubsection*{\cha}
 
-Définit la direction technique stratégique à court et moyen terme, capable de prévoir les besoins les plus importants 
-sur 6 à 12 mois et de créer des plans pour les améliorer.
+  Écoute et guide les débats pour aider à parvenir à un consensus.
+  Une fois une décision prise, communique clairement et soutient cette décision.
+
+  Définit la direction technique stratégique à court et moyen terme, capable de prévoir les besoins les plus importants 
+  sur 6 à 12 mois et de créer des plans pour les améliorer.
+
+\end{multicols}
 
 \chapter{Senior principal developer}
 
 \xp{15 à 20}
 
-\subsubsection*{\dex}
+\begin{multicols}{2}
 
-Anticipe les changements technologiques majeurs et veille à ce que l'entreprise soit toujours en avance.
+  \subsubsection*{\dex}
 
-\subsubsection*{\dex}
-Est capable de reconnaître et de faire des compromis par rapport à l'ensemble du système.
+  Anticipe les changements technologiques majeurs et veille à ce que l'entreprise soit toujours en avance.
 
-Comprend en profondeur l'ensemble de l'architecture pour une partie majeure de l'activité de l'entreprise.
+  \subsubsection*{\dex}
+  Est capable de reconnaître et de faire des compromis par rapport à l'ensemble du système.
 
-Est capable d'expliquer clairement les limites de mise à l'échelle et de fiabilité.
+  Comprend en profondeur l'ensemble de l'architecture pour une partie majeure de l'activité de l'entreprise.
 
-\subsubsection*{\str}
+  Est capable d'expliquer clairement les limites de mise à l'échelle et de fiabilité.
 
-Livre régulièrement des systèmes impliquant la contribution d'une ou plusieurs équipes, dans les délais et avec un haut 
-niveau de qualité.
+  \subsubsection*{\str}
 
-\subsubsection*{\str}
+  Livre régulièrement des systèmes impliquant la contribution d'une ou plusieurs équipes, dans les délais et avec un haut 
+  niveau de qualité.
 
-Décompose rapidement les problèmes complexes en solutions potentielles, connues et inconnues, afin d'obtenir des 
-résolutions solides plus rapidement.
+  \subsubsection*{\str}
 
-Est capable de résoudre les problèmes les plus complexes auxquels l'équipe est confrontée.
+  Décompose rapidement les problèmes complexes en solutions potentielles, connues et inconnues, afin d'obtenir des 
+  résolutions solides plus rapidement.
 
-\subsubsection*{\wis}
+  Est capable de résoudre les problèmes les plus complexes auxquels l'équipe est confrontée.
 
-Joue un rôle clé dans l'élaboration de la stratégie technologique pluriannuelle pour des domaines complets et critiques 
-de l'entreprise, englobant plusieurs systèmes et équipes.
+  \subsubsection*{\wis}
 
-\subsubsection*{\wis}
+  Joue un rôle clé dans l'élaboration de la stratégie technologique pluriannuelle pour des domaines complets et critiques 
+  de l'entreprise, englobant plusieurs systèmes et équipes.
 
-Prend des décisions avec un impact direct sur le succès ou l'échec à long terme de l'entreprise.
+  \subsubsection*{\wis}
 
-Crée une architecture qui permet de nombreux futurs potentiels sans savoir exactement quel sera l'avenir.
+  Prend des décisions avec un impact direct sur le succès ou l'échec à long terme de l'entreprise.
 
-\subsubsection*{\cha}
+  Crée une architecture qui permet de nombreux futurs potentiels sans savoir exactement quel sera l'avenir.
 
-Agit principalement comme un multiplicateur en construisant des systèmes, en rédigeant des outils ou en introduisant 
-des politiques ou des modèles qui élèvent le niveau de productivité de toute l'organisation.
+  \subsubsection*{\cha}
 
-\subsubsection*{\cha}
+  Agit principalement comme un multiplicateur en construisant des systèmes, en rédigeant des outils ou en introduisant 
+  des politiques ou des modèles qui élèvent le niveau de productivité de toute l'organisation.
 
-Communique l'excellence technologique de l'entreprise à l'extérieur via des conférences et des articles de blog. 
+  \subsubsection*{\cha}
 
-Identifie les domaines que l'entreprise peut partager efficacement avec le monde extérieur et guide la création de 
-contenu et de communication autour de ces domaines.
+  Communique l'excellence technologique de l'entreprise à l'extérieur via des conférences et des articles de blog. 
 
-Mène les discussions internes sur l'orientation des principaux domaines de la technologie, favorise un consensus élargi
-pour l'adoption de cette orientation et utilise cette orientation pour inspirer les équipes techniques.
+  Identifie les domaines que l'entreprise peut partager efficacement avec le monde extérieur et guide la création de 
+  contenu et de communication autour de ces domaines.
 
-Est considéré comme un modèle et un mentor pour chaque membre de l'équipe technique.
+  Mène les discussions internes sur l'orientation des principaux domaines de la technologie, favorise un consensus élargi
+  pour l'adoption de cette orientation et utilise cette orientation pour inspirer les équipes techniques.
+
+  Est considéré comme un modèle et un mentor pour chaque membre de l'équipe technique.
+
+\end{multicols}
 
 \chapter{Architect}
 
-\subsubsection*{\dex}
+\begin{multicols}{2}
 
-Définit la direction technique.
+  \subsubsection*{\dex}
 
-\subsubsection*{\str}
+  Définit la direction technique.
 
-Met l'accent sur la réalisation des objectifs.
+  \subsubsection*{\str}
 
-\subsubsection*{\wis}
+  Met l'accent sur la réalisation des objectifs.
 
-Identifie les opportunités de croissance stratégique technologique qui permettent à l'entreprise de se développer.
+  \subsubsection*{\wis}
 
-\subsubsection*{\cha}
+  Identifie les opportunités de croissance stratégique technologique qui permettent à l'entreprise de se développer.
 
-Communique la stratégie technique pluriannuelle et guide l'équipe dans l'identification de domaines stratégiques 
-supplémentaires pour le développement.
+  \subsubsection*{\cha}
+
+  Communique la stratégie technique pluriannuelle et guide l'équipe dans l'identification de domaines stratégiques 
+  supplémentaires pour le développement.
+
+\end{multicols}
 
 \part{Manager Track}
 
 \chapter{Engineering manager}
 
-\subsubsection*{\dex}
+\begin{multicols}{2}
 
-Comprend et pratique le développement et la gestion agile de logiciels.
+  \subsubsection*{\dex}
 
-\subsubsection*{\dex}
+  Comprend et pratique le développement et la gestion agile de logiciels.
 
-Produit des métriques de qualité sur le processus de développement du cycle de vie des logiciels.
+  \subsubsection*{\dex}
 
-Veille à ce que les logiciels soient surveillables et hautement disponibles.
+  Produit des métriques de qualité sur le processus de développement du cycle de vie des logiciels.
 
-\subsubsection*{\str}
+  Veille à ce que les logiciels soient surveillables et hautement disponibles.
 
-Progresse en déléguant efficacement.
+  \subsubsection*{\str}
 
-Veille à ce que les tâches soient réalisées conformément aux spécifications, mais sans microgestion.
+  Progresse en déléguant efficacement.
 
-\subsubsection*{\str}
+  Veille à ce que les tâches soient réalisées conformément aux spécifications, mais sans microgestion.
 
-Est proactif dans l'identification et l'élimination des obstacles pour l'équipe.
+  \subsubsection*{\str}
 
-\subsubsection*{\str}
+  Est proactif dans l'identification et l'élimination des obstacles pour l'équipe.
 
-Continue à contribuer à la correction des bogues et aux fonctionnalités sans devenir un goulet d'étranglement pour 
-l'équipe.
+  \subsubsection*{\str}
 
-\subsubsection*{\wis}
+  Continue à contribuer à la correction des bogues et aux fonctionnalités sans devenir un goulet d'étranglement pour 
+  l'équipe.
 
-Est axé sur la productivité de l'équipe et son impact collectif.
+  \subsubsection*{\wis}
 
-\subsubsection*{\wis}
+  Est axé sur la productivité de l'équipe et son impact collectif.
 
-Amener l'équipe à se concentrer sur les projets les plus impactants.
+  \subsubsection*{\wis}
 
-\subsubsection*{\wis}
+  Amener l'équipe à se concentrer sur les projets les plus impactants.
 
-Est capable de diriger les efforts de recrutement et de déterminer les effectifs pour son équipe.
+  \subsubsection*{\wis}
 
-Collabore efficacement avec le produit pour gérer la portée et les livrables de la feuille de route technique du 
-produit.
+  Est capable de diriger les efforts de recrutement et de déterminer les effectifs pour son équipe.
 
-\subsubsection*{\cha}
+  Collabore efficacement avec le produit pour gérer la portée et les livrables de la feuille de route technique du 
+  produit.
 
-Prend des décisions pour les besoins de l'équipe.
+  \subsubsection*{\cha}
 
-Apprend activement à gérer des situations de management difficiles.
+  Prend des décisions pour les besoins de l'équipe.
 
-\subsubsection*{\cha}
-Contribue au développement de carrière des autres.
+  Apprend activement à gérer des situations de management difficiles.
 
-Se réunisse régulièrement avec ses collaborateurs directs, fournit des commentaires fréquents sur leur travail, aide les
-individus à fixer des objectifs et travaille avec le responsable de l'ingénierie ou le directeur pour garantir la 
-croissance et la rétention des employés.
+  \subsubsection*{\cha}
+  Contribue au développement de carrière des autres.
 
-\subsubsection*{\cha}
+  Se réunisse régulièrement avec ses collaborateurs directs, fournit des commentaires fréquents sur leur travail, aide les
+  individus à fixer des objectifs et travaille avec le responsable de l'ingénierie ou le directeur pour garantir la 
+  croissance et la rétention des employés.
 
-Gère de manière indépendante.
+  \subsubsection*{\cha}
 
-Communique le contexte à l'équipe et expose les exigences à la direction.
+  Gère de manière indépendante.
 
-\subsubsection*{\cha}
+  Communique le contexte à l'équipe et expose les exigences à la direction.
 
-Définit des attentes claires pour les membres de l'équipe.
+  \subsubsection*{\cha}
 
-Sollicite, synthétise et fournit des commentaires.
+  Définit des attentes claires pour les membres de l'équipe.
 
-Communique les délais, la portée et les préoccupations techniques aux parties prenantes.
+  Sollicite, synthétise et fournit des commentaires.
 
-Dirige la réalisation des principales initiatives dans des délais clairs.
+  Communique les délais, la portée et les préoccupations techniques aux parties prenantes.
 
-Est capable d'identifier les domaines de la dette technique stratégique et de fournir une analyse coûts/avantages pour 
-éliminer cette dette et propose des échéanciers pour le faire.
+  Dirige la réalisation des principales initiatives dans des délais clairs.
 
-Est capable de gérer des membres d'équipe ayant des compétences et des domaines techniques différents.
+  Est capable d'identifier les domaines de la dette technique stratégique et de fournir une analyse coûts/avantages pour 
+  éliminer cette dette et propose des échéanciers pour le faire.
+
+  Est capable de gérer des membres d'équipe ayant des compétences et des domaines techniques différents.
+
+\end{multicols}
+
 
 \chapter{Directeur de l'ingénierie}
 
-\subsubsection*{\dex}
+\begin{multicols}{2}
 
-S'assure que son organisation possède une compétence technique suffisamment élevée et vise l'excellence.
+  \subsubsection*{\dex}
 
-Effectue des recherches sur les nouvelles technologies pour rester à jour des tendances et des normes de l'industrie.
+  S'assure que son organisation possède une compétence technique suffisamment élevée et vise l'excellence.
 
-Est capable d'intervenir pour déboguer et trier les systèmes critiques si nécessaire.
+  Effectue des recherches sur les nouvelles technologies pour rester à jour des tendances et des normes de l'industrie.
 
-Contribue à l'architecture en posant les bonnes questions pour s'assurer qu'elle correspond aux besoins métier.
+  Est capable d'intervenir pour déboguer et trier les systèmes critiques si nécessaire.
 
-\subsubsection*{\str}
+  Contribue à l'architecture en posant les bonnes questions pour s'assurer qu'elle correspond aux besoins métier.
 
-Développe et déploie de nouvelles stratégies pour construire une organisation de développement à haute vitesse et haute 
-performance, en ligne avec les besoins émergents des clients de l'entreprise.
+  \subsubsection*{\str}
 
-Soutient l'innovation technique et dirige la création, l'affinement continu et l'application active de des normes de 
-développement afin de garantir que la technologie puisse être exploitée comme un avantage concurrentiel durable.
+  Développe et déploie de nouvelles stratégies pour construire une organisation de développement à haute vitesse et haute 
+  performance, en ligne avec les besoins émergents des clients de l'entreprise.
 
-Participe au recrutement du personnel, aux évaluations de performance, à la formation et au développement de carrière. 
+  Soutient l'innovation technique et dirige la création, l'affinement continu et l'application active de des normes de 
+  développement afin de garantir que la technologie puisse être exploitée comme un avantage concurrentiel durable.
 
-Est responsable de la planification des effectifs et de l'évolution du personnel pour plusieurs domaines de 
-l'organisation d'ingénierie.
+  Participe au recrutement du personnel, aux évaluations de performance, à la formation et au développement de carrière. 
 
-Si nécessaire, gère les relations avec les fournisseurs et les externes pour son organisation et participe au processus 
-budgétaire.
+  Est responsable de la planification des effectifs et de l'évolution du personnel pour plusieurs domaines de 
+  l'organisation d'ingénierie.
 
-\subsubsection*{\wis}
+  Si nécessaire, gère les relations avec les fournisseurs et les externes pour son organisation et participe au processus 
+  budgétaire.
 
-Fournit un leadership aux responsables du développement logiciel, traite les problèmes techniques, de ressources et de 
-personnel.
+  \subsubsection*{\wis}
 
-Nourrit activement le talent du personnel senior dans leurs domaines.
+  Fournit un leadership aux responsables du développement logiciel, traite les problèmes techniques, de ressources et de 
+  personnel.
 
-Construit et soutient des équipes motivées et performantes.
+  Nourrit activement le talent du personnel senior dans leurs domaines.
 
-Crée une organisation qui sait équilibrer la dette technique par rapport aux objectifs commerciaux.
+  Construit et soutient des équipes motivées et performantes.
 
-\subsubsection*{\cha}
+  Crée une organisation qui sait équilibrer la dette technique par rapport aux objectifs commerciaux.
 
-Collabore avec les différentes fonctions pour définir, prioriser et assurer la mise en œuvre d'innovations spécifiques 
-visant à améliorer les fonctionnalités techniques en soutien aux besoins commerciaux, à l'efficacité et aux revenus.
+  \subsubsection*{\cha}
 
-Est capable de communiquer des concepts techniques aux parties prenantes commerciales ainsi que d'expliquer les 
-objectifs commerciaux à l'équipe technique.
+  Collabore avec les différentes fonctions pour définir, prioriser et assurer la mise en œuvre d'innovations spécifiques 
+  visant à améliorer les fonctionnalités techniques en soutien aux besoins commerciaux, à l'efficacité et aux revenus.
 
-Exploite son expérience passée et utilise de solides compétences en communication pour collaborer efficacement avec 
-toutes les parties prenantes, y compris les clients, la direction supérieure et les autres dirigeants de l'entreprise.
+  Est capable de communiquer des concepts techniques aux parties prenantes commerciales ainsi que d'expliquer les 
+  objectifs commerciaux à l'équipe technique.
 
-Vend l'entreprise et son organisation en tant qu'équipe aux candidats potentiels. 
-Inspire les recrues potentielles à rejoindre l'entreprise.
+  Exploite son expérience passée et utilise de solides compétences en communication pour collaborer efficacement avec 
+  toutes les parties prenantes, y compris les clients, la direction supérieure et les autres dirigeants de l'entreprise.
 
-Est responsable du processus de définition et de revue des OKR pour les équipes relevant de sa responsabilité.
+  Vend l'entreprise et son organisation en tant qu'équipe aux candidats potentiels. 
+  Inspire les recrues potentielles à rejoindre l'entreprise.
+
+  Est responsable du processus de définition et de revue des OKR pour les équipes relevant de sa responsabilité.
+
+\end{multicols}
 
 \chapter{VP of engineering}
 
-\subsubsection*{\dex}
-Contribue aux décisions architecturales en mettant l'accent sur les besoins du produit et de l'entreprise,
-actuels et futurs, et sait poser les bonnes questions pour aider l'équipe à prendre la bonne décision.
+\begin{multicols}{2}
 
-Débogue les organisations et les processus.
+  \subsubsection*{\dex}
+  Contribue aux décisions architecturales en mettant l'accent sur les besoins du produit et de l'entreprise,
+  actuels et futurs, et sait poser les bonnes questions pour aider l'équipe à prendre la bonne décision.
 
-\subsubsection*{\str}
+  Débogue les organisations et les processus.
 
-En partenariat avec le CTO, les responsables de produits et les autres parties prenantes commerciales, 
-traduit la vision stratégique globale en une feuille de route technologique claire et réalisable.
+  \subsubsection*{\str}
 
-\subsubsection*{\wis}
+  En partenariat avec le CTO, les responsables de produits et les autres parties prenantes commerciales, 
+  traduit la vision stratégique globale en une feuille de route technologique claire et réalisable.
 
-Identifie proactivement les goulets d'étranglement au sein de l'organisation et travaille avec les
-responsables de l'ingénierie pour les éliminer.
+  \subsubsection*{\wis}
 
-\subsubsection*{\cha}
+  Identifie proactivement les goulets d'étranglement au sein de l'organisation et travaille avec les
+  responsables de l'ingénierie pour les éliminer.
 
-S'assure que chaque membre de l'équipe comprend les objectifs commerciaux du trimestre et y adhère.
+  \subsubsection*{\cha}
 
-Identifie les domaines d'évolution ou de clarification des processus, rassemble les parties prenantes et crée et 
-communique la stratégie pour résoudre ces problèmes.
+  S'assure que chaque membre de l'équipe comprend les objectifs commerciaux du trimestre et y adhère.
 
-Articule clairement les besoins en termes de personnel et de culture qui permettront de faire progresser l'organisation
-d'ingénierie vers le niveau supérieur.
+  Identifie les domaines d'évolution ou de clarification des processus, rassemble les parties prenantes et crée et 
+  communique la stratégie pour résoudre ces problèmes.
+
+  Articule clairement les besoins en termes de personnel et de culture qui permettront de faire progresser l'organisation
+  d'ingénierie vers le niveau supérieur.
+
+\end{multicols}
 
 \chapter{CTO}
 
-\subsubsection*{\dex}
+\begin{multicols}{2}
 
-Définit la direction technique de l'entreprise.
+  \subsubsection*{\dex}
 
-Définit les priorités organisationnelles de l'ingénierie.
+  Définit la direction technique de l'entreprise.
 
-Veille à ce que l'architecture en cours de construction puisse prendre en charge plusieurs possibilités futures de 
-l'entreprise.
+  Définit les priorités organisationnelles de l'ingénierie.
 
-\subsubsection*{\str}
+  Veille à ce que l'architecture en cours de construction puisse prendre en charge plusieurs possibilités futures de 
+  l'entreprise.
 
-Met l'accent sur la réalisation des objectifs.
+  \subsubsection*{\str}
 
-\subsubsection*{\wis}
+  Met l'accent sur la réalisation des objectifs.
 
-Est capable d'identifier les opportunités de croissance commerciale offertes par la technologie et de les concrétiser.
+  \subsubsection*{\wis}
 
-\subsubsection*{\cha}
+  Est capable d'identifier les opportunités de croissance commerciale offertes par la technologie et de les concrétiser.
 
-Communique la stratégie au niveau de la direction et contribue à traduire les directives commerciales en objectifs 
-technologiques.
+  \subsubsection*{\cha}
+
+  Communique la stratégie au niveau de la direction et contribue à traduire les directives commerciales en objectifs 
+  technologiques.
+
+\end{multicols}
 
 \backmatter
 
