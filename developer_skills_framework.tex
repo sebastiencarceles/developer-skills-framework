@@ -15,6 +15,8 @@
 \usepackage{amssymb} % symbols
 \usepackage{multicol} % multiple columns
 
+\setlength\columnsep{30pt} % spacing between columns
+
 \def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
 \let\endchangemargin=\endlist 
 \setcounter{secnumdepth}{-1} % exclude numbered sections from chapter titles
@@ -31,15 +33,15 @@
   \end{color}
 }
 
-\newcommand\dex{\textcolor{BrickRed}{\textbf{Technical skill [\bsc{DEX}]}}}
-\newcommand\str{\textcolor{DarkOrchid}{\textbf{Get stuff done [\bsc{STR}]}}}
-\newcommand\wis{\textcolor{MidnightBlue}{\textbf{Impact [\bsc{WIS}]}}}
-\newcommand\cha{\textcolor{RawSienna}{\textbf{Communication \& leadership [\bsc{CHA}]}}}
+\newcommand\dex[1]{\textcolor{BrickRed}{\textbf{\bsc{Dex-{#1}}}}}
+\newcommand\str[1]{\textcolor{DarkOrchid}{\textbf{\bsc{Str-{#1}}}}}
+\newcommand\wis[1]{\textcolor{MidnightBlue}{\textbf{\bsc{Wis-{#1}}}}}
+\newcommand\cha[1]{\textcolor{OliveGreen}{\textbf{\bsc{Cha-{#1}}}}}
 
 \newcommand\dexterity{\textcolor{BrickRed}{\bsc{Dexterity}}}
 \newcommand\strength{\textcolor{DarkOrchid}{\bsc{Strength}}}
 \newcommand\wisdom{\textcolor{MidnightBlue}{\bsc{Wisdom}}}
-\newcommand\charisma{\textcolor{RawSienna}{\bsc{Charisma}}}
+\newcommand\charisma{\textcolor{OliveGreen}{\bsc{Charisma}}}
 
 \newcommand\xp[1]{\textcolor{CadetBlue}{Expérience: {#1} ans}}
 \newcommand\dev{développeur·euse}
@@ -102,19 +104,19 @@
   À chaque position correspond un ensemble de compétences, organisées par caractéristique principale.
   Les caractaristiques sont au nombre de 4 :
   
-  \subsubsection*{\dex} 
+  \subsubsection*{\textcolor{BrickRed}{\textbf{\bsc{Dexterity} : technical skill}}} 
   
   La \dexterity\ est une mesure de la profondeur de la connaissance d'une technologie.
   
-  \subsubsection*{\str} 
+  \subsubsection*{\textcolor{DarkOrchid}{\textbf{\bsc{Strength} : get stuff done}}} 
   
   La \strength\ est une mesure de la capacité à résoudre des problèmes.
   
-  \subsubsection*{\wis} 
+  \subsubsection*{\textcolor{MidnightBlue}{\textbf{\bsc{Wisdom} : impact}}} 
   
   La \wisdom\ est une mesure de la capacité à prendre des décisions et à avoir de l'impact.
   
-  \subsubsection*{\cha} 
+  \subsubsection*{\textcolor{OliveGreen}{\textbf{\bsc{Charisma} : communication \& leadership}}} 
   
   Le \charisma\ est une mesure de la capacité à influencer et inspirer les autres.
   
@@ -185,38 +187,38 @@
 
 \begin{multicols}{2}
 
-  \subsubsection*{\dex} 
+  \paragraph{\dex{jd-01}} 
 
   Possède une connaissance approfondie des concepts fondamentaux de l'informatique.
 
-  \subsubsection*{\dex} 
+  \paragraph{\dex{jd-02}} 
 
   Se concentre sur la croissance en tant que \dev, en apprenant les outils, les ressources et les processus 
   existants.
 
-  \subsubsection*{\str}
+  \paragraph{\str{jd-01}}
 
   Développe ses compétences en productivité en apprenant le contrôle de source, les éditeurs, le système de construction 
   et autres outils, ainsi que les meilleures pratiques de test.
 
-  \subsubsection*{\str}
+  \paragraph{\str{jd-02}}
 
   Est capable de prendre des sous-tâches bien définies et de les accomplir.
 
-  \subsubsection*{\wis}
+  \paragraph{\wis{jd-01}}
 
   Développe ses connaissances sur un seul composant de l'architecture du projet.
 
-  \subsubsection*{\cha}
+  \paragraph{\cha{jd-01}}
 
   Est efficace dans la communication de l'état d'avancement à l'équipe.
 
-  \subsubsection*{\cha}
+  \paragraph{\cha{jd-02}}
 
   Manifeste les valeurs fondamentales de l'entreprise, se concentre sur la compréhension et la mise en pratique de ces 
   valeurs.
 
-  \subsubsection*{\cha}
+  \paragraph{\cha{jd-03}}
 
   Accepte gracieusement les retours d'information et apprend de tout ce qu'iel fait.
 \end{multicols}
@@ -227,14 +229,14 @@
 
 \begin{multicols}{2}
 
-  \subsubsection*{\dex}
+  \subsubsection*{\dex{TODO}}
 
   Écrit du code correct et propre avec des conseils ; suit systématiquement les meilleures pratiques définies sur le
   projet.
 
   Participe à la conception technique des fonctionnalités avec des conseils.
 
-  \subsubsection*{\dex}
+  \subsubsection*{\dex{TODO}}
 
   Fait rarement la même erreur deux fois, commence à se concentrer sur l'acquisition d'une expertise dans un ou plusieurs 
   domaines (par exemple : développement dans un langage donné, meilleures pratiques de performance, utilisation efficace 
@@ -243,11 +245,11 @@
   Apprend rapidement et progresse régulièrement sans avoir besoin de commentaires significatifs constants de la part 
   de \devs\ plus expérimenté·es.
 
-  \subsubsection*{\str}
+  \subsubsection*{\str{TODO}}
 
   Fait des progrès réguliers sur les tâches ; sait quand demander de l'aide pour se débloquer.
 
-  \subsubsection*{\str}
+  \subsubsection*{\str{TODO}}
 
   Est capable de prendre en charge des fonctionnalités de petite à moyenne envergure, de la conception technique à 
   l'achèvement.
@@ -255,23 +257,23 @@
   Est capable de hiérarchiser les tâches ; évite de s'enliser dans des détails sans importance et des "discussions sans 
   fin".
 
-  \subsubsection*{\wis}
+  \subsubsection*{\wis{TODO}}
 
   Autonome dans au moins un grand domaine du code avec une compréhension globale des autres composants.
 
-  \subsubsection*{\wis}
+  \subsubsection*{\wis{TODO}}
 
   Est capable d'assurer une assistance en cas d'urgence pour leur domaine, y compris les systèmes avec lesquels iel 
   n'est pas familier·ère.
 
-  \subsubsection*{\cha}
+  \subsubsection*{\cha{TODO}}
 
   Donne des commentaires opportuns et utiles aux pairs et aux responsables.
 
   Communique les hypothèses et obtient des éclaircissements sur les tâches dès le départ afin de minimiser le besoin de 
   retravailler.
 
-  \subsubsection*{\cha}
+  \subsubsection*{\cha{TODO}}
 
   Sollicite les commentaires des autres et est désireux de trouver des moyens de s'améliorer.
 
@@ -285,7 +287,7 @@
 
 \begin{multicols}{2}
 
-  \subsubsection*{\dex}
+  \subsubsection*{\dex{TODO}}
 
   Comprend et prend des décisions de conception bien raisonnées et des compromis dans leur domaine.
 
@@ -293,24 +295,24 @@
 
   Ne s'agite pas lors du débogage.
 
-  \subsubsection*{\dex}
+  \subsubsection*{\dex{TODO}}
 
   Démontre une connaissance des tendances de l'industrie, de l'infrastructure du projet et de son système de construction.
 
-  \subsubsection*{\str}
+  \subsubsection*{\str{TODO}}
 
   Persistant face aux obstacles ; les résout efficacement, en faisant appel à d'autres personnes si nécessaire. 
 
   Nécessite un minimum de direction / supervision.
 
-  \subsubsection*{\str}
+  \subsubsection*{\str{TODO}}
 
   Prend l'initiative de résoudre les problèmes avant qu'ils ne lui soient assignés. 
   Recherche des preuves empiriques par le biais de preuves de concept, de tests et de recherches externes.
 
   Livre des produits complexes à l'équipe de QA / Produit, qu'iel estime bien préparés et exempts de bugs.
 
-  \subsubsection*{\wis}
+  \subsubsection*{\wis{TODO}}
 
   Responsable de bout en bout sur des projets de complexité croissante ; contribue au code commun.
 
@@ -318,7 +320,7 @@
 
   Comprend l'activité commerciale afférente à son domaine d'activité.
 
-  \subsubsection*{\wis}
+  \subsubsection*{\wis{TODO}}
 
   Collabore avec le produit et l'analyse et définit des exigences qui tiennent compte des besoins de toutes les parties.
 
@@ -327,14 +329,14 @@
 
   Identifie les problèmes / risques de son propre travail et de celui des autres.
 
-  \subsubsection*{\cha}
+  \subsubsection*{\cha{TODO}}
 
   Communique les décisions techniques par le biais de documents de conception ou de présentations techniques.
 
   Mentore les \devs\ juniors par le biais de la collaboration, de l'examen de conception et de l'examen de code. 
   Contribue fréquemment aux réunions informelles et aux démonstrations.
 
-  \subsubsection*{\cha}
+  \subsubsection*{\cha{TODO}}
 
   Communique efficacement entre les fonctions.
   Est capable de bien travailler avec le produit, le design, l'analyse, etc., si nécessaire.
@@ -351,47 +353,47 @@
 
 \begin{multicols}{2}
 
-  \subsubsection*{\dex}
+  \subsubsection*{\dex{TODO}}
   Expert de référence dans un domaine spécifique du code.
 
   Comprend l'architecture globale de l'ensemble du système.
 
-  \subsubsection*{\dex}
+  \subsubsection*{\dex{TODO}}
   Fournit des conseils techniques et donne son avis sur les décisions techniques qui ont un impact sur d'autres équipes ou
   sur l'entreprise dans son ensemble. 
 
   Effectue des recherches et propose de nouvelles technologies.
 
-  \subsubsection*{\str}
+  \subsubsection*{\str{TODO}}
 
   Définit et organise le travail en étapes bien définies pour éviter un livrable monolithique.
 
   Livre régulière dans les délais et travail constant pour faire des estimations précises et les respecter.
 
-  \subsubsection*{\str}
+  \subsubsection*{\str{TODO}}
 
   Est réputé pour des lancements sans problème.
 
   Est responsable du plan de tests techniques et de performance pour ses projets.
 
-  \subsubsection*{\wis}
+  \subsubsection*{\wis{TODO}}
 
   Prend l'initiative d'identifier et de résoudre des problèmes importants, en se coordonnant avec d'autres personnes sur
   des problèmes techniques transversaux.
 
-  \subsubsection*{\wis}
+  \subsubsection*{\wis{TODO}}
 
   Définit l'orientation au niveau du projet / service et influence de manière constante la prise de décision au niveau
   technique.
 
   Identifie et aborde de manière proactive la dette technique avant qu'elle ne devienne trop coûtuse à rembourser.
 
-  \subsubsection*{\cha}
+  \subsubsection*{\cha{TODO}}
 
   Aide les autres personnes à s'améliorer grâce à des revues de code, une documentation approfondie, des conseils 
   techniques et un mentorat ou en tant que chef technique sur un projet.
 
-  \subsubsection*{\cha}
+  \subsubsection*{\cha{TODO}}
   Siège aux comités de prise de décisions techniques ou architecturales, donne des commentaires sur des projets en dehors 
   de son domaine principal.
 
@@ -411,42 +413,42 @@
 
 \begin{multicols}{2}
 
-  \subsubsection*{\dex}
+  \subsubsection*{\dex{TODO}}
   Est sollicité pour des conseils techniques.
 
   Anticipe les problèmes techniques au niveau du produit et prend des décisions architecturales et de conception pour les 
   éviter.
 
-  \subsubsection*{\dex}
+  \subsubsection*{\dex{TODO}}
   Est propriétaire et expert de grandes parties de la base de code.
 
   A accumulé un historique d'améliorations majeures en termes de stabilité, de performance et de scalabilité sur des 
   systèmes critiques pour l'entreprise.
 
-  \subsubsection*{\str}
+  \subsubsection*{\str{TODO}}
 
   Est reconnu comme un contributeur prolifique aux projets principaux et aux projets annexes.
 
-  \subsubsection*{\str}
+  \subsubsection*{\str{TODO}}
 
   Est capable de réduire systématiquement la complexité des projets, des services et des processus afin de faire plus 
   avec moins de travail.
 
-  \subsubsection*{\wis}
+  \subsubsection*{\wis{TODO}}
 
   Définit l'architecture globale.
 
   Déploie plusieurs services importants, des bibliothèques complexes ou des éléments d'infrastructure majeurs.
 
-  \subsubsection*{\wis}
+  \subsubsection*{\wis{TODO}}
 
   A eu un impact positif évident sur la trajectoire technique de l'ensemble de l'entreprise.
 
-  \subsubsection*{\cha}
+  \subsubsection*{\cha{TODO}}
 
   Multiplie l'efficacité des autres en facilitant le travail inter-équipes.
 
-  \subsubsection*{\cha}
+  \subsubsection*{\cha{TODO}}
 
   Écoute et guide les débats pour aider à parvenir à un consensus.
   Une fois une décision prise, communique clairement et soutient cette décision.
@@ -462,46 +464,46 @@
 
 \begin{multicols}{2}
 
-  \subsubsection*{\dex}
+  \subsubsection*{\dex{TODO}}
 
   Anticipe les changements technologiques majeurs et veille à ce que l'entreprise soit toujours en avance.
 
-  \subsubsection*{\dex}
+  \subsubsection*{\dex{TODO}}
   Est capable de reconnaître et de faire des compromis par rapport à l'ensemble du système.
 
   Comprend en profondeur l'ensemble de l'architecture pour une partie majeure de l'activité de l'entreprise.
 
   Est capable d'expliquer clairement les limites de mise à l'échelle et de fiabilité.
 
-  \subsubsection*{\str}
+  \subsubsection*{\str{TODO}}
 
   Livre régulièrement des systèmes impliquant la contribution d'une ou plusieurs équipes, dans les délais et avec un haut 
   niveau de qualité.
 
-  \subsubsection*{\str}
+  \subsubsection*{\str{TODO}}
 
   Décompose rapidement les problèmes complexes en solutions potentielles, connues et inconnues, afin d'obtenir des 
   résolutions solides plus rapidement.
 
   Est capable de résoudre les problèmes les plus complexes auxquels l'équipe est confrontée.
 
-  \subsubsection*{\wis}
+  \subsubsection*{\wis{TODO}}
 
   Joue un rôle clé dans l'élaboration de la stratégie technologique pluriannuelle pour des domaines complets et critiques 
   de l'entreprise, englobant plusieurs systèmes et équipes.
 
-  \subsubsection*{\wis}
+  \subsubsection*{\wis{TODO}}
 
   Prend des décisions avec un impact direct sur le succès ou l'échec à long terme de l'entreprise.
 
   Crée une architecture qui permet de nombreux futurs potentiels sans savoir exactement quel sera l'avenir.
 
-  \subsubsection*{\cha}
+  \subsubsection*{\cha{TODO}}
 
   Agit principalement comme un multiplicateur en construisant des systèmes, en rédigeant des outils ou en introduisant 
   des politiques ou des modèles qui élèvent le niveau de productivité de toute l'organisation.
 
-  \subsubsection*{\cha}
+  \subsubsection*{\cha{TODO}}
 
   Communique l'excellence technologique de l'entreprise à l'extérieur via des conférences et des articles de blog. 
 
@@ -519,19 +521,19 @@
 
 \begin{multicols}{2}
 
-  \subsubsection*{\dex}
+  \subsubsection*{\dex{TODO}}
 
   Définit la direction technique.
 
-  \subsubsection*{\str}
+  \subsubsection*{\str{TODO}}
 
   Met l'accent sur la réalisation des objectifs.
 
-  \subsubsection*{\wis}
+  \subsubsection*{\wis{TODO}}
 
   Identifie les opportunités de croissance stratégique technologique qui permettent à l'entreprise de se développer.
 
-  \subsubsection*{\cha}
+  \subsubsection*{\cha{TODO}}
 
   Communique la stratégie technique pluriannuelle et guide l'équipe dans l'identification de domaines stratégiques 
   supplémentaires pour le développement.
@@ -544,66 +546,66 @@
 
 \begin{multicols}{2}
 
-  \subsubsection*{\dex}
+  \subsubsection*{\dex{TODO}}
 
   Comprend et pratique le développement et la gestion agile de logiciels.
 
-  \subsubsection*{\dex}
+  \subsubsection*{\dex{TODO}}
 
   Produit des métriques de qualité sur le processus de développement du cycle de vie des logiciels.
 
   Veille à ce que les logiciels soient surveillables et hautement disponibles.
 
-  \subsubsection*{\str}
+  \subsubsection*{\str{TODO}}
 
   Progresse en déléguant efficacement.
 
   Veille à ce que les tâches soient réalisées conformément aux spécifications, mais sans microgestion.
 
-  \subsubsection*{\str}
+  \subsubsection*{\str{TODO}}
 
   Est proactif dans l'identification et l'élimination des obstacles pour l'équipe.
 
-  \subsubsection*{\str}
+  \subsubsection*{\str{TODO}}
 
   Continue à contribuer à la correction des bogues et aux fonctionnalités sans devenir un goulet d'étranglement pour 
   l'équipe.
 
-  \subsubsection*{\wis}
+  \subsubsection*{\wis{TODO}}
 
   Est axé sur la productivité de l'équipe et son impact collectif.
 
-  \subsubsection*{\wis}
+  \subsubsection*{\wis{TODO}}
 
   Amener l'équipe à se concentrer sur les projets les plus impactants.
 
-  \subsubsection*{\wis}
+  \subsubsection*{\wis{TODO}}
 
   Est capable de diriger les efforts de recrutement et de déterminer les effectifs pour son équipe.
 
   Collabore efficacement avec le produit pour gérer la portée et les livrables de la feuille de route technique du 
   produit.
 
-  \subsubsection*{\cha}
+  \subsubsection*{\cha{TODO}}
 
   Prend des décisions pour les besoins de l'équipe.
 
   Apprend activement à gérer des situations de management difficiles.
 
-  \subsubsection*{\cha}
+  \subsubsection*{\cha{TODO}}
   Contribue au développement de carrière des autres.
 
   Se réunisse régulièrement avec ses collaborateurs directs, fournit des commentaires fréquents sur leur travail, aide les
   individus à fixer des objectifs et travaille avec le responsable de l'ingénierie ou le directeur pour garantir la 
   croissance et la rétention des employés.
 
-  \subsubsection*{\cha}
+  \subsubsection*{\cha{TODO}}
 
   Gère de manière indépendante.
 
   Communique le contexte à l'équipe et expose les exigences à la direction.
 
-  \subsubsection*{\cha}
+  \subsubsection*{\cha{TODO}}
 
   Définit des attentes claires pour les membres de l'équipe.
 
@@ -625,7 +627,7 @@
 
 \begin{multicols}{2}
 
-  \subsubsection*{\dex}
+  \subsubsection*{\dex{TODO}}
 
   S'assure que son organisation possède une compétence technique suffisamment élevée et vise l'excellence.
 
@@ -635,7 +637,7 @@
 
   Contribue à l'architecture en posant les bonnes questions pour s'assurer qu'elle correspond aux besoins métier.
 
-  \subsubsection*{\str}
+  \subsubsection*{\str{TODO}}
 
   Développe et déploie de nouvelles stratégies pour construire une organisation de développement à haute vitesse et haute 
   performance, en ligne avec les besoins émergents des clients de l'entreprise.
@@ -651,7 +653,7 @@
   Si nécessaire, gère les relations avec les fournisseurs et les externes pour son organisation et participe au processus 
   budgétaire.
 
-  \subsubsection*{\wis}
+  \subsubsection*{\wis{TODO}}
 
   Fournit un leadership aux responsables du développement logiciel, traite les problèmes techniques, de ressources et de 
   personnel.
@@ -662,7 +664,7 @@
 
   Crée une organisation qui sait équilibrer la dette technique par rapport aux objectifs commerciaux.
 
-  \subsubsection*{\cha}
+  \subsubsection*{\cha{TODO}}
 
   Collabore avec les différentes fonctions pour définir, prioriser et assurer la mise en œuvre d'innovations spécifiques 
   visant à améliorer les fonctionnalités techniques en soutien aux besoins commerciaux, à l'efficacité et aux revenus.
@@ -684,23 +686,23 @@
 
 \begin{multicols}{2}
 
-  \subsubsection*{\dex}
+  \subsubsection*{\dex{TODO}}
   Contribue aux décisions architecturales en mettant l'accent sur les besoins du produit et de l'entreprise,
   actuels et futurs, et sait poser les bonnes questions pour aider l'équipe à prendre la bonne décision.
 
   Débogue les organisations et les processus.
 
-  \subsubsection*{\str}
+  \subsubsection*{\str{TODO}}
 
   En partenariat avec le CTO, les responsables de produits et les autres parties prenantes commerciales, 
   traduit la vision stratégique globale en une feuille de route technologique claire et réalisable.
 
-  \subsubsection*{\wis}
+  \subsubsection*{\wis{TODO}}
 
   Identifie proactivement les goulets d'étranglement au sein de l'organisation et travaille avec les
   responsables de l'ingénierie pour les éliminer.
 
-  \subsubsection*{\cha}
+  \subsubsection*{\cha{TODO}}
 
   S'assure que chaque membre de l'équipe comprend les objectifs commerciaux du trimestre et y adhère.
 
@@ -716,7 +718,7 @@
 
 \begin{multicols}{2}
 
-  \subsubsection*{\dex}
+  \subsubsection*{\dex{TODO}}
 
   Définit la direction technique de l'entreprise.
 
@@ -725,15 +727,15 @@
   Veille à ce que l'architecture en cours de construction puisse prendre en charge plusieurs possibilités futures de 
   l'entreprise.
 
-  \subsubsection*{\str}
+  \subsubsection*{\str{TODO}}
 
   Met l'accent sur la réalisation des objectifs.
 
-  \subsubsection*{\wis}
+  \subsubsection*{\wis{TODO}}
 
   Est capable d'identifier les opportunités de croissance commerciale offertes par la technologie et de les concrétiser.
 
-  \subsubsection*{\cha}
+  \subsubsection*{\cha{TODO}}
 
   Communique la stratégie au niveau de la direction et contribue à traduire les directives commerciales en objectifs 
   technologiques.
